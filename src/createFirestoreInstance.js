@@ -21,7 +21,7 @@ export default function createFirestoreInstance(firebase, configs, dispatch) {
   };
 
   // extend existing firebase internals (using redux-firestore along with redux-firebase)
-  firebase._ = merge(defaultInternals, firebase._); // eslint-disable-line no-param-reassign
+  firebase.extendApp({ _: merge(defaultInternals, firebase._) });
 
   // Aliases for methods
   const aliases = [
