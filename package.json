@@ -2,7 +2,7 @@
   "name": "redux-firestore",
   "version": "0.9.0",
   "description": "Redux bindings for Firestore.",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
   "unpkg": "dist/redux-firestore.min.js",
